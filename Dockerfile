@@ -28,6 +28,3 @@ RUN apk --update add \
     && pip install azure-storage-blob \
     && apk del --purge build-base openssl-dev python3-dev
 
-# TODO: These should be set on startup of the container instead
-ENV AZURE_ACC_NAME chgads
-ENV AZURE_ACC_KEY DefaultEndpointsProtocol=https;AccountName=chgads;AccountKey=uoEq9nB/OsJqoqZolvCHnRU7AN4ITOyb2Kxcqh5sfONBU7FgpURmvrKft9U+vj3tDWHALuCnvfKsbYwex95x5A==;EndpointSuffix=core.windows.net
